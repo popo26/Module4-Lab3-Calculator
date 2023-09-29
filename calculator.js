@@ -1,24 +1,27 @@
-let num1 = document.getElementById("num1");
-let num2 = document.getElementById("num2");
 let add = document.querySelector(".add");
 let subtract = document.querySelector(".subtract");
+let result = document.getElementById("result");
 
-num1.addEventListener("input", function (e) {
-  console.log(e.target.value);
-  console.log(typeof e.target.valueAsNumber);
-  // return num1.valueAsNumber;
-});
+const addition = () => {
+  let num1 = document.getElementById("num1").value;
+  let num2 = document.getElementById("num2").value;
+  return num1 + num2;
+};
 
-num2.addEventListener("input", function (e) {
-  console.log(e.target.value);
-  console.log(typeof e.target.valueAsNumber);
-  // return num2.valueAsNumber;
-});
+const subtraction = () => {
+  let num1 = document.getElementById("num1").value;
+  let num2 = document.getElementById("num2").value;
+  return num1 - num2;
+};
 
 add.addEventListener("click", function () {
   document.getElementById("operator").innerHTML = "+";
+  let total = parseFloat(addition());
+  result.innerHTML = total;
 });
 
 subtract.addEventListener("click", function () {
   document.getElementById("operator").innerHTML = "-";
+  let total = parseFloat(subtraction());
+  result.innerHTML = total;
 });
