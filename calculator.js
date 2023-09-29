@@ -4,26 +4,26 @@ let result = document.getElementById("result");
 let clear = document.querySelector(".clear");
 
 const addition = () => {
-  let num1 = document.getElementById("num1").value;
-  let num2 = document.getElementById("num2").value;
+  let num1 = parseFloat(document.getElementById("num1").value);
+  let num2 = parseFloat(document.getElementById("num2").value);
   return num1 + num2;
 };
 
 const subtraction = () => {
-  let num1 = document.getElementById("num1").value;
-  let num2 = document.getElementById("num2").value;
+  let num1 = parseFloat(document.getElementById("num1").value);
+  let num2 = parseFloat(document.getElementById("num2").value);
   return num1 - num2;
 };
 
 add.addEventListener("click", function () {
   document.getElementById("operator").innerHTML = "+";
-  let total = parseFloat(addition());
+  let total = addition();
   result.innerHTML = total;
 });
 
 subtract.addEventListener("click", function () {
   document.getElementById("operator").innerHTML = "-";
-  let total = parseFloat(subtraction());
+  let total = subtraction();
   result.innerHTML = total;
 });
 
