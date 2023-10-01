@@ -3,16 +3,12 @@ let num2 = document.getElementById("num2");
 let add = document.querySelector(".add");
 let subtract = document.querySelector(".subtract");
 
-num1.addEventListener("input", function (e) {
-  console.log(e.target.value);
-  console.log(typeof e.target.valueAsNumber);
-  // return num1.valueAsNumber;
+num1.addEventListener("input", function () {
+  console.log(num1.value);
 });
 
-num2.addEventListener("input", function (e) {
-  console.log(e.target.value);
-  console.log(typeof e.target.valueAsNumber);
-  // return num2.valueAsNumber;
+num2.addEventListener("input", function () {
+  console.log(num2.value);
 });
 
 add.addEventListener("click", function () {
