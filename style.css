@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+.container {
+    /* padding:100px; */
+}
+
+.wrapper {
+    width:60%;
+    margin:auto;
+    padding-top:100px;
+}
+
+form{
+    display:flex;
+    gap:10px;
+    width:60%;
+    margin:auto;
+}
+
+.wrapper2 {
+    width:60%;
+    margin:auto;
+    padding-top:50px;
+}
+
+#result {
+    font-size:30px;
+}
