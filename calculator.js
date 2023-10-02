@@ -4,6 +4,7 @@ let add = document.querySelector(".add");
 let subtract = document.querySelector(".subtract");
 let result = document.getElementById("result");
 let equal = document.querySelector(".equal");
+let clear = document.querySelector(".clear");
 
 const addition = () => {
   let num1 = parseFloat(document.getElementById("num1").value);
@@ -42,8 +43,8 @@ equal.addEventListener("click", function () {
 });
 
 clear.addEventListener("click", function () {
-  document.getElementById("num1").value = "";
-  document.getElementById("num2").value = "";
-  document.getElementById("operator").innerHTML = "";
+  num1.value = "";
+  num2.value = "";
+  operator.innerHTML = "";
   result.innerHTML = "";
 });

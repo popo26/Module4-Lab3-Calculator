@@ -4,19 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Cabin+Sketch:wght@700&family=Tektur:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
-      <input type="number" name="num1" id="num1" placeholder="First Number"/>
-      <div id="operator"></div>
-      <input type="number" name="num2" id="num2" placeholder="Second Number"/>
-    </form>
-    <div>
+    <!-- <div class="container"> -->
+    <div class="wrapper">
+      <form>
+        <input type="number" name="num1" id="num1" placeholder="First Number" />
+        <div id="operator"></div>
+        <input
+          type="number"
+          name="num2"
+          id="num2"
+          placeholder="Second Number"
+        />
+      </form>
+      <div>
         <h3 id="result"></h3>
-        <button class="add">+</button>
-        <button class="subtract">-</button>
-        <button class="clear">Clear</button>
+      </div>
     </div>
+    <div class="wrapper2">
+      <button class="add">+</button>
+      <button class="subtract">-</button>
+      <button class="equal">=</button>
+      <button class="clear">c</button>
+
+    </div>
+    <!-- </div> -->
     <script src="calculator.js"></script>
   </body>
 </html>
