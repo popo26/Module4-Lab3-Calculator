@@ -1,10 +1,8 @@
 body {
     text-align: center;
     background-color: #000000;
-    /* font-family: 'Tektur', cursive; */
     font-family: 'Cabin Sketch', cursive;
 }
-
 
 .wrapper {
     width:60%;
@@ -30,7 +28,6 @@ form > input {
     border:5px solid #FF6D28;
     color:#FF6D28;
     font-family: 'Cabin Sketch', cursive;
-
 }
 
 .wrapper2 {
@@ -62,6 +59,93 @@ button{
     cursor: pointer;
     background-color: #FCE700;
     font-family: 'Cabin Sketch', cursive;
+}
+
+@media only screen and (max-width: 1000px) {
+    /* body {
+      background-color: cyan;
+    } */
+    .wrapper {
+        width:90%;
+        margin:auto;
+    }
+
+    button{
+        font-size:70px;
+        width:80px;
+        padding:10px;
+        margin:10px;
+        border-radius: 30px;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    /* body {
+      background-color: lightblue;
+    } */
+
+    .wrapper {
+        width:100%;
+        margin:auto;
+    }
+    
+    form{
+        display:flex;
+        gap:10px;
+        width:100%;
+        margin:auto;
+    }
+    
+    form > input {
+        text-align: center;
+        height:80px;
+        width:100%;
+        font-size:36px;
+    }
+    
+    .wrapper2 {
+        width:100%;
+        margin:auto;
+        padding-top:50px;
+    }
+  }
+
+@media only screen and (max-width: 576px) {
+/* body {
+    background-color: pink;
+} */
+
+.wrapper {
+    width:100%;
+    margin:auto;
+}
+
+form{
+    display:flex;
+    gap:10px;
+    width:100%;
+    margin:auto;
+}
+
+form > input {
+    text-align: center;
+    height:80px;
+    width:160px;
+    font-size:22px;
+}
+
+.wrapper2 {
+    width:100%;
+    margin:auto;
+    padding-top:20px;
+}
+
+button{
+    font-size:60px;
+    width:60px;
+    padding:6px;
+    margin:10px;
+}
 }
 
 
