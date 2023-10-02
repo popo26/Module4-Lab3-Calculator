@@ -1,7 +1,9 @@
+let num1 = document.getElementById("num1");
+let num2 = document.getElementById("num2");
 let add = document.querySelector(".add");
 let subtract = document.querySelector(".subtract");
 let result = document.getElementById("result");
-let clear = document.querySelector(".clear");
+let equal = document.querySelector(".equal");
 
 const addition = () => {
   let num1 = parseFloat(document.getElementById("num1").value);
@@ -16,15 +18,27 @@ const subtraction = () => {
 };
 
 add.addEventListener("click", function () {
-  document.getElementById("operator").innerHTML = "+";
-  let total = addition();
-  result.innerHTML = total;
+  operator.innerHTML = "+";
 });
 
 subtract.addEventListener("click", function () {
-  document.getElementById("operator").innerHTML = "-";
-  let total = subtraction();
-  result.innerHTML = total;
+  operator.innerHTML = "-";
+});
+
+equal.addEventListener("click", function () {
+  if (num1.value === "" || num2.value === "") {
+    result.innerHTML = "Please enter a number in both fields.";
+  } else if (operator.innerHTML === "") {
+    result.innerHTML = "Please select an operator.";
+  } else {
+    if (operator.innerHTML === "+") {
+      let total = addition();
+      result.innerHTML = total;
+    } else {
+      let total = subtraction();
+      result.innerHTML = total;
+    }
+  }
 });
 
 clear.addEventListener("click", function () {
